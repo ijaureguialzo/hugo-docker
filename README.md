@@ -1,13 +1,8 @@
-# hugo-docker
+# Hugo
 
-```
- ______________________________________
-/ Agree with them now, it will save so \
-\ much time.                           /
- --------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+Configuración de Docker para usar [Hugo](https://gohugo.io).
+
+## Referencias
+
+- [Getting started](https://gohugo.io/getting-started/)
+- [Hugo Docker Images](https://docker.hugomods.com)
