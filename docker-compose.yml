@@ -1,10 +1,12 @@
 services:
   hugo:
-    image: hugomods/hugo:exts-non-root
+    image: hugomods/hugo:${IMAGE_TAG:-exts-non-root}
     hostname: workspace
     command: server -D
+    environment:
+      - PS1=\u@\h:\w\$\040
     ports:
-      - 1313:1313
+      - "1313:1313"
     volumes:
       - ./sites:/src
       - homedir:/root
