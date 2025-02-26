@@ -1,0 +1,15 @@
+services:
+  hugo:
+    image: hugomods/hugo:exts-non-root
+    hostname: workspace
+    command: server -D
+    ports:
+      - 1313:1313
+    volumes:
+      - ./sites:/src
+      - homedir:/root
+      - cache:/tmp/hugo_cache
+
+volumes:
+  homedir:
+  cache:
